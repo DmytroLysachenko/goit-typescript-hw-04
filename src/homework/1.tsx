@@ -5,11 +5,7 @@ type Props = {
   children: any;
   onContentEndVisible: () => void;
 };
-type options = {
-  rootMargin: string;
-  threshold: number;
-  root: Element | Document | null;
-};
+type options = IntersectionObserverInit;
 
 export function Observer({ children, onContentEndVisible }: Props) {
   // Вкажіть правильний тип для useRef зверніть увагу, в який DOM елемент ми його передаємо
